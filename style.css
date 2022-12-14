@@ -86,7 +86,6 @@ img {
 
 @media only screen and (max-width: 400px) {
     #main_box{
-        transform: translate(15vw, 20vh);
+        transform: translate(10vw, 20vh);
     }
-
 }

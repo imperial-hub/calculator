@@ -1,0 +1,128 @@
+* {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color: black;
+    font-family: system-ui;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.operation {
+    height: 100vh;
+    width: 50vw;
+    background-color: rgb(19, 17, 17);
+}
+
+form {
+    text-align: inherit;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+#sub{
+    background-color: orange;
+    font-weight: bold;
+}
+button {
+    border-radius: 2vw;
+    width: 25vw;
+    height: 7vh;
+}
+#clear{
+    background-color: #131111;
+    color: white;
+    font-weight: bold;
+}
+
+.input {
+    border: 2px double #131111;
+    border-radius: 2vw;
+    width: 25vw;
+    height: 7vh;
+    margin: 5vh 0 5vh 10vw;
+}
+
+#ans.input {
+    background-color: #131111;
+    color: white;
+    margin: 5vh 0 5vh 0vw;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+textarea {
+    margin: 0;
+    resize: none;
+}
+
+.history {
+    height: 100vh;
+    width: 50vw;
+    background-color: orange;
+}
+
+#history {
+    height: 60vh;
+    width: 30vw;
+    /* transform: translate(10vw,0vh); */
+    border: 1px solid #131111;
+    border-radius: 2vw;
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    form{
+        margin-top:5vh ;
+    }
+    body {
+        flex-direction: column;
+    }
+    .operation {
+        height: 35vh;
+        width: 100vw;
+    }
+    #num2{
+        position: absolute;
+        transform: translate(43vw,0vh);
+    }
+    ::placeholder{
+        font-size: 2vh;
+    }
+    .input{
+        width: 40vw;
+    }
+    #sub{
+        transform: translate(20vw,-5vh);
+    }
+    .history {
+        /* flex-direction: row; */
+        height: 65vh;
+        width: 100vw;
+        background-color: orange;
+    }
+    #history {
+        height: 30vh;
+        width: 60vw;
+        border: 1px solid black;
+        border-radius: 2vw;
+        text-align: center;
+    }
+    #ans.input {
+        margin: 3vh 0 10vh 0;
+    }
+}
